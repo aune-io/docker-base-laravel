@@ -10,6 +10,7 @@ Base image for a container running Laravel
 * Enables Apache mod_rewrite
 * Installs the pdo_mysql PHP dependency
 * Sets `/var/www/html/public` as Apache root
+* Install _wkhtmltopdf_ and dependencies
 
 ## Usage
 Copy your application code under `/var/www/html`, so that the public folder `/var/www/html/public` is served by Apache.
