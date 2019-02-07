@@ -1,7 +1,10 @@
 FROM php:7.1-apache
 
+# Install dependencies
+RUN apt-get update && apt-get install zlib1g-dev
+
 # Install pdo_mysql extension
-RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install pdo_mysql zip
 
 # Enable apache mod_rewrite
 RUN a2enmod rewrite
