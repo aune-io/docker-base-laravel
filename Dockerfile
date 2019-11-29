@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:7.2-apache
 
 # Install dependencies
 RUN apt-get update && apt-get install zlib1g-dev
