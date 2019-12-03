@@ -1,7 +1,7 @@
 FROM php:7.2-apache
 
 # Install dependencies
-RUN apt-get update && apt-get install zlib1g-dev
+RUN apt-get update && apt-get install zlib1g-dev libpng-dev libjpeg-dev
 
 # Install pdo_mysql extension
 RUN docker-php-ext-install pdo_mysql zip gd
